@@ -1,0 +1,16 @@
+.checkout-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 6px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.checkout-form input,
+.checkout-form select {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  width: 100%;
+}

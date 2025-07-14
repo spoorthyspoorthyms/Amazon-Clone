@@ -1,0 +1,87 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color, #fff);
+  color: var(--text-color, #000);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Transitions for buttons and interactive elements */
+button,
+.btn {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button hover animation */
+.btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar dropdown animation */
+.navbar .dropdown-menu {
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(10px);
+  display: block !important;
+  pointer-events: none;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Dropdown menu scaling animation */
+.dropdown-menu {
+  transition: all 0.25s ease-in-out;
+  transform-origin: top;
+}
+
+.dropdown-menu.show {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.dropdown-menu:not(.show) {
+  transform: scaleY(0);
+  opacity: 0;
+  display: block !important;
+  height: 0;
+  overflow: hidden;
+}
+
+/* Dark theme overrides (for React Context dark mode) */
+body.dark {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+}
+
+body.dark .card {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  border-color: #333;
+}
+
+body.dark .dropdown-menu {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+body.dark .btn {
+  background-color: #343a40;
+  color: #fff;
+}
+
+body.dark .btn:hover {
+  background-color: #495057;
+}

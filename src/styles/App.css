@@ -1,0 +1,95 @@
+/* ===== Root Default Variables ===== */
+:root {
+  --transition-speed: 0.3s;
+  --border-radius: 6px;
+}
+
+/* ===== Light Theme ===== */
+body.light {
+  --bg-color: #f8f9fa;
+  --text-color: #212529;
+  --card-bg: #ffffff;
+  --input-bg: #ffffff;
+  --input-border: #ced4da;
+  --navbar-bg: #ffffff;
+  --banner-text: #212529;
+  --btn-bg: #ff9900;
+  --btn-text: white;
+  --btn-hover: #cc7a00;
+}
+
+/* ===== Dark Theme ===== */
+body.dark {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --card-bg: #1f1f1f;
+  --input-bg: #2c2c2c;
+  --input-border: #444;
+  --navbar-bg: #222;
+  --banner-text: #f1f1f1;
+  --btn-bg: #ffaa00;
+  --btn-text: black;
+  --btn-hover: #e0a800;
+}
+
+/* ===== Apply Global Styles ===== */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.card,
+.form-control,
+.form-select {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--input-border);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.form-control::placeholder {
+  color: #888;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background-color: var(--navbar-bg) !important;
+  transition: background-color var(--transition-speed);
+}
+
+/* ===== Banner Text ===== */
+.banner-content {
+  color: var(--banner-text);
+}
+
+/* ===== Buttons (Custom Reusable) ===== */
+.btn-custom {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  border: none;
+  transition: background-color var(--transition-speed);
+}
+
+.btn-custom:hover {
+  background-color: var(--btn-hover);
+}
+
+/* ===== Product Cards Hover Effect ===== */
+.product-card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  transition: transform var(--transition-speed), background-color var(--transition-speed);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== Smooth Scroll ===== */
+html {
+  scroll-behavior: smooth;
+}

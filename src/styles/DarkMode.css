@@ -1,0 +1,46 @@
+/* Light mode styles */
+body.light-mode {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+body.light-mode .navbar {
+  background-color: #ffffff !important;
+  color: #000 !important;
+}
+
+body.light-mode .navbar .nav-link,
+body.light-mode .navbar-brand,
+body.light-mode .dropdown-item {
+  color: #000 !important;
+}
+
+body.light-mode .form-control,
+body.light-mode .form-select {
+  background-color: #ffffff;
+  color: #000;
+}
+
+body.light-mode .btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Ensure cards, inputs, links have proper contrast */
+body.light-mode .card,
+body.light-mode .product-card,
+body.light-mode .cart-item,
+body.light-mode .cart-summary {
+  background-color: #ffffff;
+  color: #000;
+  border-color: #ccc;
+}
+
+body.light-mode a {
+  color: #007bff;
+}
+
+/* Optional: smooth transition */
+body, .navbar, .btn, .form-control {
+  transition: all 0.3s ease-in-out;
+}
