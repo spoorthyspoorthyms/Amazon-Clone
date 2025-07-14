@@ -15,12 +15,12 @@ An Amazon-inspired responsive **E-Commerce website** built using **React**, **Bo
 ## 📸 Screenshots
 
 ###  full home Page  
-![home Page](./screenshots/fullhomepage.png)
+![home Page](./screenshots/fullhomepage.jpg)
 Description:
 The homepage showcases a dynamic product listing with featured banners and categories. It includes a responsive navbar with cart and theme toggle options. Products are displayed with images, prices, and "Add to Cart" buttons, all styled using Bootstrap for a clean layout.
 
 ### 🛒 empty cart  
-![Cartempty](./screenshots/empty)
+![Cartempty](./screenshots/emptycart.png)
 Description:
 The cart page displays a clear "Your cart is empty" message when no items are added. It maintains a clean layout with a disabled checkout button and prompts users to explore products. This ensures a smooth user experience even when the cart has no items.
 
